@@ -1,5 +1,8 @@
+name: call-workflow-from-another-repo
+on: push
+
 jobs:
-  call-workflow-from-another-repo:
+  build-test-deploy:
     uses: ana-om/actions-learning-pathway/.github/workflows/build-test-deploy.yml@main
     with:
       node-version: '18.x'
